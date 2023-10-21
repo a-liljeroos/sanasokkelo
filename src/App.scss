@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Noticia+Text:wght@400;700&display=swap");
+
+$text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.397);
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.App {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(95, 119, 139);
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  font-family: "DM Serif Display", serif;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 5px;
+  scroll-behavior: smooth;
+}
+
+.bg-image {
+  position: absolute;
+  height: 120vh;
+
+  object-fit: cover;
+  transform: translateZ(-10px) scale(4);
+}
+
+.content {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+input {
+  border: none;
+  padding: 5px;
+  border-radius: 4px;
+  margin-inline: 5px;
+  font-size: 18px;
+  font-family: "Noticia Text", serif;
+  border-bottom: 2px solid rgb(148, 148, 148);
+}
+
+.title-wrapper {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+h1 {
+  font-family: "DM Serif Display", serif;
+  background-color: transparent;
+  font-size: 55px;
+  line-height: 40px;
+  text-shadow: $text-shadow;
+}
+
+.size-settings {
+  margin-top: 20px;
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-shadow: $text-shadow;
+  background-color: rgba(104, 104, 104, 0.13);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  box-shadow: 0px 3px 5px rgba(58, 58, 58, 0.425);
+  border-bottom: 1px solid rgb(128, 128, 128);
+  border-top: 1px solid rgb(161, 161, 161);
+}
+
+.size-input,
+.wordAmount-input {
+  width: 40px;
+  box-shadow: $text-shadow;
+}
+
+.word-settings-title {
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center;
+  padding-bottom: 15px;
+  text-shadow: $text-shadow;
+}
+
+.words {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.word-input-cont {
+  display: flex;
+}
+
+.word-input-label {
+  display: flex;
+  align-items: center;
+  width: 20px;
+}
+
+.word-input {
+  width: 100%;
+  box-shadow: $text-shadow;
+}
+
+.button-group {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.add-word-btn {
+  cursor: pointer;
+  padding-top: 5px;
+  padding-left: 5px;
+  background-color: white;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  transition: 150ms;
+}
+
+.generate-button {
+  position: relative;
+  cursor: pointer;
+  padding: 8px;
+  padding-top: 9px;
+  border: none;
+  border-radius: 50%;
+  font-family: "Noticia Text", serif;
+  font-weight: 700;
+  transition: 110ms;
+  z-index: 2;
+  box-shadow: 0px 7px 10px rgba(68, 68, 68, 0.466);
+  background: rgb(250, 250, 250);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(250, 250, 250, 1) 0%,
+    rgba(162, 162, 162, 1) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(250, 250, 250, 1) 0%,
+    rgba(162, 162, 162, 1) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(250, 250, 250, 1) 0%,
+    rgba(162, 162, 162, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fafafa",endColorstr="#a2a2a2",GradientType=1);
+}
+
+.generate-button::after {
+  position: absolute;
+  content: "";
+  height: 60px;
+  width: 60px;
+
+  top: -7px;
+  right: 5px;
+  z-index: 10;
+  background: rgb(250, 250, 250);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(250, 250, 250, 1) 0%,
+    rgba(162, 162, 162, 0) 25%,
+    rgba(162, 162, 162, 0) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(250, 250, 250, 1) 0%,
+    rgba(162, 162, 162, 0) 25%,
+    rgba(162, 162, 162, 0) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(250, 250, 250, 1) 0%,
+    rgba(162, 162, 162, 0) 25%,
+    rgba(162, 162, 162, 0) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fafafa",endColorstr="#a2a2a2",GradientType=1);
+}
+
+.add-word-btn:hover {
+  box-shadow: 0px 0px 4px rgb(32, 32, 32);
+  transform: scale(1.1);
+}
+
+.generate-button:active {
+  transform: translateY(15px);
+}
+
+.add-word-btn:active {
+  transform: scale(0.99);
+}
+
+.word-canvas-container {
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0px 3px 5px rgba(58, 58, 58, 0.425);
+  padding: 20px;
+  padding-top: 40px;
+  margin: 20px;
+  margin-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(238, 238, 238);
+  color: black;
+  border-bottom: 5px solid rgb(194, 194, 194);
+}
+
+.word-canvas {
+  padding: 10px;
+}
+
+#save-btn {
+  cursor: pointer;
+  position: absolute;
+  top: -60px;
+  left: 25%;
+  height: 45px;
+  width: 70px;
+  border: 3px solid rgb(58, 58, 58);
+  border-radius: 8px;
+}
+
+.canvas-cable {
+  position: absolute;
+  right: calc(50% - 5px);
+  top: 15px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  outline: 3px solid rgb(51, 51, 51);
+  background-color: black;
+  box-shadow: 0px 4px 8px rgba(14, 13, 13, 0.699);
+}
+
+.canvas-cable::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 50px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+
+  left: 17%;
+  bottom: 5px;
+  background: rgb(122, 30, 30);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(122, 30, 30, 1) 0%,
+    rgba(113, 28, 28, 1) 7%,
+    rgba(89, 22, 22, 1) 48%,
+    rgba(117, 29, 29, 1) 94%,
+    rgba(122, 30, 30, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(122, 30, 30, 1) 0%,
+    rgba(113, 28, 28, 1) 7%,
+    rgba(89, 22, 22, 1) 48%,
+    rgba(117, 29, 29, 1) 94%,
+    rgba(122, 30, 30, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(122, 30, 30, 1) 0%,
+    rgba(113, 28, 28, 1) 7%,
+    rgba(89, 22, 22, 1) 48%,
+    rgba(117, 29, 29, 1) 94%,
+    rgba(122, 30, 30, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7a1e1e",endColorstr="#7a1e1e",GradientType=1);
+}
+
+.word-line {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+}
+
+.letter {
+  font-family: "Noticia Text", serif;
+  text-align: center;
+  width: 23px;
+  height: 23px;
+  animation: 500ms fadeIn ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
