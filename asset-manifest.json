@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/sanasokkelot/static/css/main.cb411304.css",
-    "main.js": "/sanasokkelot/static/js/main.55b9cbbc.js",
-    "static/js/787.292ab67d.chunk.js": "/sanasokkelot/static/js/787.292ab67d.chunk.js",
-    "index.html": "/sanasokkelot/index.html",
-    "main.cb411304.css.map": "/sanasokkelot/static/css/main.cb411304.css.map",
-    "main.55b9cbbc.js.map": "/sanasokkelot/static/js/main.55b9cbbc.js.map",
-    "787.292ab67d.chunk.js.map": "/sanasokkelot/static/js/787.292ab67d.chunk.js.map"
+    "main.css": "/sanasokkelo/static/css/main.cb411304.css",
+    "main.js": "/sanasokkelo/static/js/main.c657762b.js",
+    "static/js/787.292ab67d.chunk.js": "/sanasokkelo/static/js/787.292ab67d.chunk.js",
+    "index.html": "/sanasokkelo/index.html",
+    "main.cb411304.css.map": "/sanasokkelo/static/css/main.cb411304.css.map",
+    "main.c657762b.js.map": "/sanasokkelo/static/js/main.c657762b.js.map",
+    "787.292ab67d.chunk.js.map": "/sanasokkelo/static/js/787.292ab67d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cb411304.css",
-    "static/js/main.55b9cbbc.js"
+    "static/js/main.c657762b.js"
   ]
 }
