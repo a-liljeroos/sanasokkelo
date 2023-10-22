@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/sanasokkelo/static/css/main.4b16d068.css",
+    "main.css": "/sanasokkelo/static/css/main.559cc67d.css",
     "main.js": "/sanasokkelo/static/js/main.51eeb21c.js",
     "static/js/787.292ab67d.chunk.js": "/sanasokkelo/static/js/787.292ab67d.chunk.js",
     "static/media/bg1.jpg": "/sanasokkelo/static/media/bg1.c5ce38f75c82748c48a3.jpg",
     "index.html": "/sanasokkelo/index.html",
-    "main.4b16d068.css.map": "/sanasokkelo/static/css/main.4b16d068.css.map",
+    "main.559cc67d.css.map": "/sanasokkelo/static/css/main.559cc67d.css.map",
     "main.51eeb21c.js.map": "/sanasokkelo/static/js/main.51eeb21c.js.map",
     "787.292ab67d.chunk.js.map": "/sanasokkelo/static/js/787.292ab67d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4b16d068.css",
+    "static/css/main.559cc67d.css",
     "static/js/main.51eeb21c.js"
   ]
 }
