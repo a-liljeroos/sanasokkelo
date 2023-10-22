@@ -41,7 +41,6 @@ function App() {
 
         <div className="settings">
           <div className="size-settings">
-            <h3 className="word-settings-title">Asetukset</h3>
             <label htmlFor="">
               Leveys
               <input
@@ -88,7 +87,6 @@ function App() {
               (max 20)
             </label>
 
-            <h3 className="word-settings-title">Sanat</h3>
             <div className="words">
               {Array(maze.wordAmount)
                 .fill(0)
