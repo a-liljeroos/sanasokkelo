@@ -5,6 +5,7 @@ import { BsPlusCircle } from "react-icons/bs";
 import { SlMinus } from "react-icons/sl";
 import { TbRefresh } from "react-icons/tb";
 import html2canvas from "html2canvas";
+import bgImage from "./bg1.jpg";
 
 interface Imaze {
   size: number[];
@@ -31,7 +32,7 @@ function App() {
 
   return (
     <div className="App">
-      <img className="bg-image" src="bg1.jpg" alt="background" />
+      <img className="bg-image" src={bgImage} alt="background" />
       <div className="content">
         <div className="title-wrapper">
           <h1>Sanasokkelo</h1>
