@@ -44,6 +44,9 @@ input[type="number"] {
   align-items: center;
   margin: 0 auto;
   z-index: 2;
+  @media (max-width: 600px) {
+    width: 100%;
+  }
 }
 
 input {
@@ -232,6 +235,9 @@ h1 {
 
 .word-canvas {
   padding: 10px;
+  @media (max-width: 600px) {
+    padding: 0px;
+  }
 }
 
 #save-btn {
@@ -301,6 +307,9 @@ h1 {
   font-size: 20px;
   line-height: 23px;
   display: flex;
+  @media (max-width: 600px) {
+    font-size: 13px;
+  }
 }
 
 .letter {
@@ -309,6 +318,10 @@ h1 {
   width: 23px;
   height: 23px;
   animation: 500ms fadeIn ease-out;
+  @media (max-width: 600px) {
+    width: 16px;
+    height: 16px;
+  }
 }
 
 @keyframes fadeIn {
