@@ -33,9 +33,8 @@ input[type="number"] {
 .bg-image {
   position: absolute;
   height: 120vh;
-
   object-fit: cover;
-  transform: translateZ(-10px) scale(4);
+  transform: translateZ(-8px) translate(0, 300px) scale(4);
 }
 
 .content {
